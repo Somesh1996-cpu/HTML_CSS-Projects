@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="background-color:hwb(221 2% 24%); color: white;">
+        <h3>Login</h3>
+        <fieldset style="width: 500px;">
+            <legend>Personal Information</legend>
+            <form>
+            <label for="username">Username: </label>
+            <input type="text" id="username" required
+             placeholder="Enter first name"
+             title="Enter your first name">
+<br><br>
+            <label for="email">Email: </label>
+            <input type="email" placeholder="fake123@gmail.com" id="email">
+<br><br>
+            <label for="pass">Password: </label>
+            <input type="password" id="pass" minlength="6" maxlength="12" pattern="[a-z]{1}[A-z]{1}[0-9]{1}" title="Password must be contain 6 to 12 Characters">
+<br><br>
+            <label for="mobile">Mobile No:</label>
+            <input type="tel" id="mobile" placeholder="9786543456" maxlength="10" pattern="[0-9]{10}">
+<br><br>
+            <label>Age:</label>
+            <input type="number" max="120" min="18" title="Please select your age">
+<br><br>
+            <label>DOB:</label>
+            <input type="date">
+<br><br>
+            <label>Link:</label>
+            <input type="url" placeholder="www.google.com">
+<br><br>
+            <label>Upload Resume:</label>
+            <input type="file" accept=".pdf">
+<br><br>
+            <label>Skills:</label>
+            <input type="checkbox" id="Java" value="Java">
+            <label for =Java>Java</label>
+            <input type="checkbox" id="Aptitude" value="Aptitude">
+            <label for =Aptitude>Aptitude</label>
+            <input type="checkbox" id="Manual" value="Manual">
+            <label for = "Manual">Manual Testing</label>
+            <input type="checkbox" id="SQL" value="SQL">
+            <label for="SQL">SQL</label>
+            <input type="checkbox" id="ReactJS" value="ReactJS">
+            <label for="ReactJS">ReactJS</label>
+<br><br>
+            <label for Gender>Gender:</label>
+            <input type="radio" name="gender" id="Male" value="Male">
+            <label for = "Male">Male</label>
+            <input type="radio" name="gender" id="Female" value="Female">
+            <label for = "Female">Female</label>
+            <input type="radio" name="gender" id="Other" value="Other">
+            <label for = "Other">Other</label>
+<br><br>
+            <label>Select City:</label>
+            <select>
+                <option>City</option>
+                <option>Pune</option>
+                <option>Nagpur</option>
+                <option>Mumbai</option>
+                <option>Bengaluru</option>
+            </select>
+<br><br>
+            <textarea placeholder="Write your feedback here..."></textarea>
+<br><br>
+            <input type="range"> <br><br>
+            <button>Submit</button>
+            <button inputmode="Reset">Reset</button>
+            </form>
+    </fieldset>
+    </body>
+</html>
